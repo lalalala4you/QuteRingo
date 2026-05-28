@@ -248,7 +248,7 @@ def format_web(annotations: list[dict], audio_b64: str = "", translation: str = 
     # Translation
     trans_html = ''
     if translation:
-        trans_html = f'<hr class="divider"><div class="label">🇬🇧 English</div><div class="roma">{translation}</div>'
+        trans_html = f'<hr class="divider"><div class="label">🇬🇧 English</div><div class="eng">{translation}</div>'
     
     return f"""<!DOCTYPE html>
 <html lang="ja">
@@ -268,6 +268,7 @@ body {{
 .fg-top {{ font-size: 11px; color: #888; line-height: 1.3; }}
 .fg-bot {{ font-size: 20px; color: #ddd; line-height: 1.3; }}
 .roma {{ font-size: 15px; color: #555; line-height: 1.8; font-style: italic; }}
+.eng {{ font-size: 15px; color: #aab; line-height: 1.8; }}
 .replay {{
   width: 100%; margin-top: 24px; padding: 14px;
   background: #e94560; color: #fff; border: none; border-radius: 12px;
